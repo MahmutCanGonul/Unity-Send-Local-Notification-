@@ -23,7 +23,7 @@ https://assetstore.unity.com/packages/tools/integration/simple-android-notificat
                          if(isPause)
                          {
                          
-                              Datetime timeToNotify = Datetime.Now.AddMinutes(1);
+                              DateTime timeToNotify = DateTime.Now.AddMinutes(1);
                               TimeSpan time = timeToNotify - DateTime.Now;
                               NotificationManager.SendWithAppIcon(time,title,content,Color.green,NotificationIcon.Bell);
                          }
